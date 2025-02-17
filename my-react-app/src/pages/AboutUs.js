@@ -14,7 +14,17 @@ function AboutUs({ darkMode }) {
 
     document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    // Add cursor removal after typing animation
+    setTimeout(() => {
+      const typingElement = document.querySelector('.typing-effect');
+      if (typingElement) {
+        typingElement.classList.add('completed');
+      }
+    }, 3500); // Match this with animation duration
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (

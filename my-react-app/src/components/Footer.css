@@ -1,8 +1,8 @@
 .footer {
   background-color: #1a237e;
   color: white;
-  padding: 4rem 2rem 1rem;
-  margin-top: 4rem;
+  padding: 2rem 2rem 1rem;
+  margin-top: 2rem;
 }
 
 .footer-content {
@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0;
 }
 
 .footer-section h3 {
@@ -28,7 +29,7 @@
 }
 
 .footer-section h4 {
-  font-size: 1.2rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   color: #90CAF9;
   text-align: center;
@@ -54,6 +55,7 @@
   color: #B3E5FC;
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .footer-section ul li a:hover {
@@ -71,6 +73,7 @@
   color: #B3E5FC;
   font-size: 1.5rem;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .social-links a:hover {
@@ -109,6 +112,7 @@
   color: #B3E5FC;
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .footer-bottom-links a:hover {
@@ -154,15 +158,4 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-}
-
-.footer-logo {
-  width: 150px; /* Adjust based on your needs */
-  margin: 0 auto 1rem;
-}
-
-.footer-logo-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
 } 

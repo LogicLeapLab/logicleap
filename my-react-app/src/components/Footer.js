@@ -7,13 +7,6 @@ function Footer({ darkMode }) {
     <footer className={`footer ${darkMode ? 'dark-mode' : ''}`}>
       <div className="footer-content">
         <div className="footer-section">
-          <div className="footer-logo">
-            <img 
-              src="/images/logo.png" 
-              alt="Logic Leap" 
-              className="footer-logo-img"
-            />
-          </div>
           <p>Empowering businesses through AI and automation solutions.</p>
           <div className="social-links">
             <a href="https://www.linkedin.com/company/logic-leap-online/" target="_blank" rel="noopener noreferrer">

@@ -7,21 +7,14 @@ function Navbar({ darkMode, toggleDarkMode }) {
     <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
       <div className="navbar-left">
         <Link to="/" className="brand-link">
-          <div className="logo-container">
-            <img 
-              src="/images/logo.png" 
-              alt="Logic Leap" 
-              className="logo"
-            />
-          </div>
           <span className="website-name">Logic Leap</span>
         </Link>
       </div>
       <div className="navbar-right">
         <Link to="/about">About Us</Link>
-        <Link to="/contact">Contact Us</Link>
         <Link to="/automate">Automate With Us</Link>
         <Link to="/learn">Learn With Us</Link>
+        <Link to="/contact">Contact Us</Link>
         <button onClick={toggleDarkMode} className="dark-mode-toggle">
           {darkMode ? '☀️' : '🌙'}
         </button>

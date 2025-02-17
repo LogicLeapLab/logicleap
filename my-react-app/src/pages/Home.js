@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const slides = [
     {
@@ -223,6 +228,10 @@ function Home() {
     }
   };
 
+  const handleLearnMore = () => {
+    navigate('/automate');
+  };
+
   return (
     <div className="home">
       <section className="hero-slider">
@@ -280,9 +289,9 @@ function Home() {
       {/* Featured Solutions */}
       <section className="featured-solutions">
         <div className="solution-card">
-          <h2>AI-Powered Business Intelligence</h2>
-          <p>Transform your data into actionable insights with our advanced AI solutions.</p>
-          <Link to="/learn">Learn More →</Link>
+          <h2>AI Solutions</h2>
+          <p>Discover how our AI solutions can transform your business operations.</p>
+          <a onClick={handleLearnMore} style={{ cursor: 'pointer' }}>Learn More</a>
         </div>
 
         <div className="solution-card">
@@ -292,7 +301,7 @@ function Home() {
         </div>
 
         <div className="solution-card">
-          <h2>Quick IT Solutions</h2>
+          <h2>Tailor made IT solutions</h2>
           <p>Rapid implementation of cutting-edge technology solutions for your business.</p>
           <Link to="/about">Discover →</Link>
         </div>
