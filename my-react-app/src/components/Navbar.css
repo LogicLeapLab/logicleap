@@ -1,0 +1,132 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  width: 120px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.website-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar-right a:hover {
+  background-color: #f0f0f0;
+  color: #2196F3;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dark-mode .website-name {
+  color: #ffffff;
+}
+
+.dark-mode .navbar-right a {
+  color: #ffffff;
+}
+
+.dark-mode .navbar-right a:hover {
+  background-color: #3d3d3d;
+  color: #64B5F6;
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: #3d3d3d;
+}
+
+/* Add these new styles */
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+.brand-link:hover {
+  opacity: 0.9;
+}
+
+/* Also ensure other elements don't overlap */
+.about-hero, .tech-background, .floating-elements {
+  z-index: 1;
+}
+
+/* Update dark mode styles */
+.navbar.dark-mode {
+  background-color: #1a1a1a;
+}
+
+/* Remove the old SVG styles */
+.logo-container svg {
+  display: none;
+} 

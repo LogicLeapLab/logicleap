@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+/* Dark mode styles for the main content */
+.dark-mode .App {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-mode .page {
+  background-color: #2d2d2d;
+}
+
+/* Add this to ensure the body fills the viewport */
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Default light mode */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode for body */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}

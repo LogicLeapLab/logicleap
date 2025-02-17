@@ -1,0 +1,447 @@
+.about-page {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #1a237e, #0d47a1);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-mission {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.vision-section, .mission-section {
+  padding: 4rem 2rem;
+}
+
+.vision-section {
+  background-color: white;
+}
+
+.mission-section {
+  background-color: #f5f5f5;
+}
+
+.vision-container, .mission-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #1a237e;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.vision-content p, .mission-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Dark mode styles */
+.dark-mode .about-page {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .about-hero {
+  background: linear-gradient(135deg, #0d1b3e, #1a237e);
+}
+
+.dark-mode .about-mission,
+.dark-mode .mission-section {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .vision-section {
+  background-color: #1a1a1a;
+}
+
+.dark-mode h2 {
+  color: #64B5F6;
+}
+
+.dark-mode .vision-content p,
+.dark-mode .mission-content p {
+  color: #bbb;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .vision-content p,
+  .mission-content p {
+    font-size: 1rem;
+  }
+
+  .about-hero,
+  .about-mission,
+  .vision-section,
+  .mission-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* Tech Background Animation */
+.tech-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.1;
+}
+
+.grid-line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.grid-line.horizontal {
+  width: 100%;
+  height: 1px;
+  animation: scanline 3s linear infinite;
+}
+
+.grid-line.vertical {
+  width: 1px;
+  height: 100%;
+  animation: scanline-vertical 3s linear infinite;
+}
+
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tech-element {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: monospace;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glitch Effect */
+.glitch-effect {
+  position: relative;
+  animation: glitch 3s infinite;
+}
+
+.glitch-effect::before,
+.glitch-effect::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Typing Effect */
+.typing-effect {
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  width: fit-content;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* AI Brain Animation */
+.ai-brain-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  background: rgba(26,35,126,0.1);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Binary Rain Animation */
+.binary {
+  font-family: 'Courier New', monospace;
+  font-size: 8px;
+  fill: #2196F3;
+  animation: rainDrop 2s linear infinite;
+}
+
+/* Circuit Lines */
+.circuit-line {
+  fill: none;
+  stroke: #1976D2;
+  stroke-width: 2;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawCircuit 2s ease-out forwards;
+}
+
+.circuit-line.branch {
+  stroke: #2196F3;
+  animation-delay: 0.5s;
+}
+
+/* Connection Points */
+.point {
+  fill: #64B5F6;
+  animation: pulsePoint 1.5s ease-in-out infinite;
+}
+
+/* CPU Core */
+.cpu-core {
+  fill: #1976D2;
+  animation: pulseCPU 2s ease-in-out infinite;
+}
+
+.cpu-text {
+  fill: white;
+  font-size: 8px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  animation: glowText 2s ease-in-out infinite;
+}
+
+/* Tech Stack Icons */
+.tech-stack-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tech-icon {
+  padding: 1rem;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 8px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Progress Bars */
+.progress-indicators {
+  margin: 2rem 0;
+}
+
+.progress-bar {
+  height: 4px;
+  background: rgba(33, 150, 243, 0.1);
+  margin: 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2196F3;
+  animation: fillProgress 2s ease-out forwards;
+}
+
+/* Animations */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes scanline-vertical {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glitch {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(10deg); }
+  21% { transform: skew(-10deg); }
+  23% { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: fit-content; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+@keyframes fillProgress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode Enhancements */
+.dark-mode .tech-element {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode .brain-path {
+  stroke: #64B5F6;
+}
+
+.dark-mode .neuron {
+  fill: #90CAF9;
+}
+
+.dark-mode .progress-fill {
+  background: #64B5F6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tech-stack-icons {
+    flex-wrap: wrap;
+  }
+  
+  .tech-icon {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+/* New Animations */
+@keyframes rainDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes drawCircuit {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulsePoint {
+  0%, 100% {
+    fill: #64B5F6;
+    r: 3;
+  }
+  50% {
+    fill: #2196F3;
+    r: 4;
+  }
+}
+
+@keyframes pulseCPU {
+  0%, 100% {
+    fill: #1976D2;
+  }
+  50% {
+    fill: #2196F3;
+  }
+}
+
+@keyframes glowText {
+  0%, 100% {
+    fill: white;
+    filter: none;
+  }
+  50% {
+    fill: #E3F2FD;
+    filter: drop-shadow(0 0 2px #E3F2FD);
+  }
+}
+
+/* Dark mode adjustments */
+.dark-mode .ai-brain-icon {
+  background: rgba(13,71,161,0.2);
+}
+
+.dark-mode .binary {
+  fill: #90CAF9;
+}
+
+.dark-mode .circuit-line {
+  stroke: #64B5F6;
+}
+
+.dark-mode .circuit-line.branch {
+  stroke: #90CAF9;
+}
+
+.dark-mode .point {
+  fill: #90CAF9;
+}
+
+.dark-mode .cpu-core {
+  fill: #42A5F5;
+} 
