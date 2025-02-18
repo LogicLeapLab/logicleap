@@ -233,8 +233,8 @@ function Home() {
   };
 
   return (
-    <div className="home">
-      <section className="hero-slider">
+    <main className="home">
+      <header className="hero-slider" role="banner">
         <div className="slides-container" style={{ transform: `translateX(-${currentSlide * 20}%)` }}>
           {slides.map((slide, index) => (
             <div 
@@ -284,10 +284,11 @@ function Home() {
             </svg>
           </button>
         </>
-      </section>
+      </header>
 
       {/* Featured Solutions */}
-      <section className="featured-solutions">
+      <section className="featured-solutions" aria-label="Featured Solutions">
+        <h2 className="visually-hidden">Featured Solutions</h2>
         <div className="solution-card">
           <h2>AI Solutions</h2>
           <p>Discover how our AI solutions can transform your business operations.</p>
@@ -308,8 +309,8 @@ function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="services-section">
-        <h2>Our Core Services</h2>
+      <section className="services-section" aria-label="Our Services">
+        <h2 className="visually-hidden">Our Services</h2>
         <div className="services-grid">
           <div className="service-item">
             <h3>AI Consulting</h3>
@@ -448,7 +449,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 

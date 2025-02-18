@@ -120,4 +120,24 @@
 .brand-link,
 .dark-mode-toggle {
   cursor: pointer;
+}
+
+.company-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Adjust existing styles */
+.navbar-left {
+  display: flex;
+  align-items: center;
 } 
