@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LogicLeapLab/logicleap/static/css/main.09ecda34.css",
+    "main.js": "/LogicLeapLab/logicleap/static/js/main.c3fed634.js",
+    "static/js/453.ad6eb26e.chunk.js": "/LogicLeapLab/logicleap/static/js/453.ad6eb26e.chunk.js",
+    "index.html": "/LogicLeapLab/logicleap/index.html",
+    "main.09ecda34.css.map": "/LogicLeapLab/logicleap/static/css/main.09ecda34.css.map",
+    "main.c3fed634.js.map": "/LogicLeapLab/logicleap/static/js/main.c3fed634.js.map",
+    "453.ad6eb26e.chunk.js.map": "/LogicLeapLab/logicleap/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09ecda34.css",
+    "static/js/main.c3fed634.js"
+  ]
+}
