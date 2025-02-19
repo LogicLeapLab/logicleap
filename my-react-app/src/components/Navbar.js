@@ -7,7 +7,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
     <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
       <div className="navbar-left">
         <Link to="/" className="brand-link">
-          <img src="logicleap.png" alt="Logic Leap Logo" className="company-logo" />
+          <img src={`${process.env.PUBLIC_URL}/logicleap.png`} alt="Logic Leap Logo" className="company-logo" />
           <span className="website-name">Logic Leap</span>
         </Link>
       </div>
