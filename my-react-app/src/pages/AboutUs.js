@@ -20,7 +20,7 @@ function AboutUs({ darkMode }) {
       if (typingElement) {
         typingElement.classList.add('completed');
       }
-    }, 3500); // Match this with animation duration
+    }, 3500); // Match this with animation durations
 
     return () => {
       observer.disconnect();
